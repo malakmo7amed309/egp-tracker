@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --color-paper: #f6f4ec;
+  --color-card: #fffdf7;
+  --color-ink: #152420;
+  --color-muted: #6b7a72;
+  --color-green: #0d5c46;
+  --color-green-soft: #e3efe9;
+  --color-gold: #b98a1d;
+  --color-gold-soft: #f7ecd4;
+  --color-down: #b3432b;
+  --color-line: #e4dfd0;
+}
+
+html, body, #root { min-height: 100%; }
+body { font-family: var(--font-body); background: var(--color-paper); color: var(--color-ink); }
+
+@keyframes rise { 0% { transform: translateY(10px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+@keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+.anim-rise { animation: rise 0.35s ease both; }
+.live-dot { animation: pulse-dot 1.6s ease-in-out infinite; }
