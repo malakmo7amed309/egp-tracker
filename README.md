@@ -26,4 +26,4 @@ npm run dev
 
 ## Screenshot
 
-![EGP Tracker](docs/screenshot.png)
+![EGP Tracker](docs/showcase.gif)
